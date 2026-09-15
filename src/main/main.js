@@ -14,10 +14,10 @@ function createWindow() {
   const devUrl = "http://localhost:3000";
   const prodPath = path.join(__dirname, "../../build/index.html");
 
-  if (process.env.NODE_ENV === "development") {
+  if (!app.isPackaged) {
     mainWindow.loadURL(devUrl);
   } else {
-   mainWindow.loadFile(prodPath);
+    mainWindow.loadFile(prodPath);
   }
 }
 

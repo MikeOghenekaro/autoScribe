@@ -2,3 +2,7 @@ node_modules/
 dist/
 .env
 .github/
+readme.txt
+build-log.txt
+Dev-Build-Notes.txt
+.gitignore
